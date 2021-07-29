@@ -3,7 +3,17 @@ import Image from 'next/image'
 import AocDayTemplate from '../components/aocDayTemplate'
 import styles from '../styles/Home.module.css'
 
+class Day {
+
+  constructor(link, solution) {
+    this.getTitle = new RegExp(link, '\\d')
+    this.link = link
+    this.solution = solution
+    this.title = getTitle.test(link)
+  }
+}
 export default function Home() {
+
   return (
     <>
       <div className="p-4 shadow rounded bg-white">
@@ -11,7 +21,7 @@ export default function Home() {
         <p className="text-gray-500">in Next.JS</p>
       </div>
 
-      <AocDayTemplate />
+      <AocDayTemplate day={new Day('https://adventofcode.com/2020/day/1', 'yes')} />
     </>
   )
 }
