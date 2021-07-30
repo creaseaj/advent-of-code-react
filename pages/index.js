@@ -5,11 +5,12 @@ import styles from '../styles/Home.module.css'
 
 class Day {
 
-  constructor(link, solution) {
-    this.getTitle = 'testTitle'
+  constructor(link, solution, title, colour) {
+    this.title = title
     this.link = link
     this.solution = solution
-    this.title = getTitle.test(link)
+    this.colourPrimary = colour
+    this.colourSecondary = colour
   }
 }
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         <p className="text-gray-500">in Next.JS</p>
       </div>
 
-      <AocDayTemplate day={new Day('https://adventofcode.com/2020/day/1', 'yes')} />
+      <AocDayTemplate day={new Day('https://adventofcode.com/2020/day/1', 'yes', 'Day 1', '#ff00ff')} />
     </>
   )
 }
