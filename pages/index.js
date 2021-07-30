@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 class Day {
 
   constructor(link, solution) {
-    this.getTitle = new RegExp(link, '\\d')
+
     this.link = link
     this.solution = solution
     this.title = getTitle.test(link)
