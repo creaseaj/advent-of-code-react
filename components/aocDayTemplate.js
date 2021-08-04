@@ -10,7 +10,7 @@ const AocDayTemplate = (day) => {
     <div className="m-20 rounded-md p-10" style={{ background: day.day.colourPrimary }}>
       <div className="flex flex-col items-center justify-center text-2xl ">
         <a href={day.day.link}>{day.day.title}</a>
-        <button className="px-10 py-5 m-5 w-56 rounded-md text-white" onClick={() => setAnswer(input)} style={{ background: day.day.colourPrimary }}>Run Day</button>
+        <button className="px-10 py-5 m-5 w-56 rounded-md text-white bg-black bg-opacity-50" onClick={() => setAnswer(day.day.solution(input))}>Run Day</button>
       </div>
       <div className="grid grid-cols-2 h-72 gap-10">
         <div >

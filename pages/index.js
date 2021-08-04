@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import AocDayTemplate from '../components/aocDayTemplate'
+import day1p1 from '../components/dayFunctions'
 import styles from '../styles/Home.module.css'
 
 class Day {
@@ -22,7 +23,7 @@ export default function Home() {
         <p className="text-gray-500">in Next.JS</p>
       </div>
 
-      <AocDayTemplate day={new Day('https://adventofcode.com/2020/day/1', 'yes', 'Day 1', '#ff00ff')} />
+      <AocDayTemplate day={new Day('https://adventofcode.com/2020/day/1', day1p1, 'Day 1', '#ff00ff')} />
     </>
   )
 }
