@@ -19,12 +19,12 @@ export default function Home() {
   return (
     <>
       <div className="p-4 shadow rounded bg-white">
-        <h1 className="text-purple-500 leading-normal">Advent of Code 2020</h1>
+        <h1 className="text-purple-500 leading-normal">Advent of Code 2021</h1>
         <p className="text-gray-500">in Next.JS</p>
       </div>
 
       <AocDayTemplate day={new Day('https://adventofcode.com/2020/day/1', dayFunctions.day1p1, dayFunctions.day1p2, 'Day 1', '#ff00ff')} />
-      <AocDayTemplate day={new Day('https://adventofcode.com/2020/day/2', dayFunctions.day1p1, dayFunctions.day1p2, 'Day 2', '#ff0099')} />
+      <AocDayTemplate day={new Day('https://adventofcode.com/2020/day/18', dayFunctions.day18p1, dayFunctions.day18p2, 'Day 18', '#ff0099')} />
 
     </>
   )
